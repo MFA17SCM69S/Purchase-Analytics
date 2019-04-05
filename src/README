@@ -1,0 +1,10 @@
+1. The files are imported.
+2. The two datasets are merged on product id - this is done to work on the full dataset. 
+3. The variable answer has the number of times that a product was requested from each department. Department is sorted in ascending order at a later point in the code.
+4. The department number and the number of times that a product was requested from each department is put together into a data frame-output_part
+5. The number of records that have the product being ordered for the first time is calculated.This and the department number are put into one dataframe. The logic to this is that reordered =0 (which shows that the item was ordered for the first time)is taken out from the main dataframe. The number of records is found to be 13307953.
+6. Steps 4 and 5 along with the department number are combined into one dataframe.
+7. The percentage column is calculated by dividing : Number of times requested from each department for first order by Number of times requested from each department.
+8. The percentage is rounded off to the nearest two decimal places.
+9. Department number column and hence the final dataframe is sorted in ascending order - based on the department number 
+10. The column names are changed and the csv file is thus generated. 
